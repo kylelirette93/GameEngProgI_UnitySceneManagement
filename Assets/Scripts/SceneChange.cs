@@ -7,12 +7,9 @@ public class SceneChange : MonoBehaviour
 {
     public string sceneName;
     public string spawnPoint;
-    
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         LevelManager.Instance.ChangeScene(sceneName, spawnPoint);
-    }
-
-   
-    
+    }  
 }
